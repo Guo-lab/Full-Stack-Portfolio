@@ -89,10 +89,10 @@
 
 ## Basically, in <br>  frontend_react/src 
    - index.js (only import react here)
-   ![imgInMDimage-20220416164436624](imgInMD/image-20220416164436624.png)
+      ![imgInMDimage-20220416164436624](imgInMD/image-20220416164436624.png)
 
    - App.js
-   with ES7+ React/Redux/React-Native snippets
+      with ES7+ React/Redux/React-Native snippets
    
       `rafce`
 
@@ -116,7 +116,7 @@ In frontend_react:
        Several Larger Components with both .jsx and .scss file
 
    - In .jsx file:<br>
-   `rafce`
+      `rafce`
 
    - Import those containers in the App.js
    - Export in the index.js
@@ -134,36 +134,49 @@ In frontend_react:
 ### Now turn to Navbar (.js file)
 Focus:
    1. img src 
+
    2. ul unordered list  
       - Tips: https://www.devbridge.com/articles/implementing-clean-css-bem-method/ (38:32) 
- 
+
    3. add className to nav, div, ul, li,
+
    4. More in Navbar.scss  
       - `background: rgba(255, 255, 255, 0.25);`
       - `z-index: 2;` => above the content
       - `@media screen and (min-width: 2000px) {    
         width: 180px;  
         height: 40px;  
-      }` => media query inside specific classes
+        }` => media query inside specific classes
       - `a {
           color: var(--gray-color);
         }` => reuse from src/index.css
       - `&:hover {
               color: var(--secondary-color);
           }` just in li{ a{} }
+      
    5. menu, here Framer Motion: https://www.framer.com/motion/
+
    6. just in Navbar.scss:
-      - `@media screen and (max-width: 900px) {
+      ```scss
+      @media screen and (max-width: 900px) {
         display: none;
-    }` => trigger a specific menu
-      - motion div (scss in .app__navbar-menu)
-      - `svg {
-            width: 35px;
-            height: 35px;
-            color: var(--secondary-color);
-            margin: 0.5rem 1rem;
-        }` => For Big close icon   
-        in .jsx file : `<HiX onClick={() => setToggle(false)} />`  
+      }
+      ```
+      
+      => trigger a specific menu
+      
+      - - motion div (scss in .app__navbar-menu)
+      
+        - ```scss
+          svg {
+                  width: 35px;
+                  height: 35px;
+                  color: var(--secondary-color);
+                  margin: 0.5rem 1rem;
+              }
+          ```
+      
+          => For Big close icon   in .jsx file : `<HiX onClick={() => setToggle(false)} />`     
 
    Now basically, navbar 'menu' has been built
 
@@ -173,4 +186,36 @@ Focus:
 ### Now turn into Header (.jsx file) (1:09:16)   
 #### To show Header, `{ /* <Navbar /> */}`  to just cover Navbar
    1. <mark>marginLeft Spell bug again <mark>  
-   2. 
+   2. After doing some motion.divs and scaleVariants, let Navbar back
+   3. <mark>Pay attention to the size you zoom in<mark>
+   4. <mark>Check className<mark>
+
+```scss
+.app__header-img {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  img {
+      width: 100%;
+      object-fit: contain;
+      z-index: 1;
+  }
+  .overlay_circle {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      width: 200%;
+      height: 190%;
+  }
+}
+```
+Confused
+But I got super cool results!
+
+***
+STEP-1 Ends
