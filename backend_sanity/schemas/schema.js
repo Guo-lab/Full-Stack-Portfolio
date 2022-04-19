@@ -10,7 +10,7 @@ import brands from './brands'
 import abouts from './abouts'
 import experiences from './experiences'
 import skills from './skills'
-import workExperience from './workExperience'
+import ResearchExperience from './ResearchExperience'
 import contact from './contact'
 
 
@@ -28,7 +28,7 @@ export default createSchema({
     brands, 
     abouts, 
     skills, 
-    workExperience, 
+    ResearchExperience, 
     experiences, 
     contact
   ]),

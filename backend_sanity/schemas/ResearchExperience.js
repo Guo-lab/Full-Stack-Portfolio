@@ -1,7 +1,7 @@
 export default {
 
-    name:'workExperience',
-    title:'Work Experience',
+    name:'ResearchExperience',
+    title:'Research Experience',
 
     type:'document',
 
