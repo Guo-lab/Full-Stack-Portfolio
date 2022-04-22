@@ -37,14 +37,33 @@ In src/wrapper, import `NavigationDots, SocialMedia`, so create NavigationDots.j
 NavigationDots:
    ![imgInMD/code4](imgInMD/code4.png)
 
-Then, convert wrap into high order component. Use return function HOC():  
-   ![imgInMD/code5](imgInMD/code5.png)
-In const AppWrap HOC function: 
-    ![imgInMD/code6](imgInMD/code6.png)
+Then, convert wrap into high order component. Use return function HOC():    
+   ![imgInMD/code5](imgInMD/code5.png)  
+In const AppWrap HOC function:   
+   ![imgInMD/code6](imgInMD/code6.png)  
 Deal with import and export issues.  
 How to use AppWrap?  
 
 For instance: in Header.jsx: `export default Header` => `export default AppWrap(Header, 'home');` and div id='home' can be just in AppWrap()  
 Do similar thing to other components.  
 
+## Work/ Research Experience:
+- First: 
+    ![imgInMD/code7](imgInMD/code7.png)
+- Pay attention: function and useState:  
+    ![imgInMD/code8](imgInMD/code8.png)
+    - Then with:    
+        ![imgInMD/code9](imgInMD/code9.png)  
+        and  
+        ![imgInMD/code10](imgInMD/code10.png)  
+        (2:19:33)
+    - Below img, a motion.div
+- Deal with scss and next step is to fix the handleWorkFilter:    
+    ![imgInMD/code11](imgInMD/code11.png)
 
+
+
+---
+
+## Skills Section:
+Here, install `npm install react-tooltip`
