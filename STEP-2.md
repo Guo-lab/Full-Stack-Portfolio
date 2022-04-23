@@ -67,3 +67,63 @@ Do similar thing to other components.
 
 ## Skills Section:
 Here, install `npm install react-tooltip`
+In Skills.jsx, create useState and useEffect:  
+   - ![imgInMD/code12](imgInMD/code12.png)  
+And build the simple frame:  
+   - ![imgInMD/code13](imgInMD/code13.png)  
+Do with scss file.  
+Then, after doing skills parts, continue to code experience(Awards) parts.  
+
+- <mark>Experience Bug:<mark>
+
+   - ![imgInMD/code14](imgInMD/code14.png)
+   - Tips: (3:06:10)   
+      - `experience?.works?.map((work) => ()`
+      - Debug2: 
+      - Year exists.
+      ![imgInMD/codeDebug](imgInMD/codeDebug.png)
+    - <mark>Explain: year can not be the unique key, so map once to map year and map a second time to map the work<mark> 
+    ![imgInMD/codeBugFixed](imgInMD/codeBugFixed.png)  
+
+- Back to scss file: add experience things  
+(Skills circle colors can be changed `<div className='app__flex' style={{backgroundColor: skill.bgColor}}>`)  
+***
+
+## Before turning into next section, author proposed one higher order component to make animation once scrolling!
+In frontend_react/src/wrapper/MotionWrap.js
+After export in the wrapper/index.js.  
+Import them in each jsx file of each component.
+![imgInMD/code15](imgInMD/code15.png)
+*** 
+
+
+## Testimonial Section ... For me, (∂) no need for now, I suppose ...
+Similar to recommendation?  
+## Contact Footer Section (3:51:00)
+- Build the frame of jsx file
+- deal with the state and 'handle' functions  
+(4:00:00)
+- Handle functions
+    ![imgInMD/code16](imgInMD/code16.png)
+- Implement the styles.  
+- (command + space)
+- Now, when message sent, it will be sent directly to sanity
+
+---
+
+### favicon on the top and the name of the site
+easy: frontend_react/public/index.html     
+## Deploy this.
+> In /frontend_react  
+`npm run build`
+
+- https://www.netlify.com/
+- Sign up, and drag the build folder in the frontend_react into it(deploy manully) 
+    ![imgInMD/Deploy](imgInMD/Deploy.png)
+- Turn to backend_sanity/ and `sanity manage` in API CORS origins
+- Add ORIGIN.
+
+> https://app.netlify.com/sites/gsqportfolio/settings/domain  
+
+
+Come to https://gsqportfolio.netlify.app/

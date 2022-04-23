@@ -5,13 +5,14 @@ import './About.scss';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
-import { images } from '../../constants';
+// import { images } from '../../constants';
 
 //import client
 import { urlFor, client } from '../../client';
 
 // 2022-04-21
 import { AppWrap } from '../../wrapper';
+import { MotionWrap } from '../../wrapper';
 
 
 // static data
@@ -74,4 +75,9 @@ const About = () => {
   )
 }
 
-export default AppWrap(About, 'about');
+// export default AppWrap(About, 'about');
+export default AppWrap(
+  MotionWrap(About, 'app__about'),
+  'about',
+  "app__whitebg"
+);

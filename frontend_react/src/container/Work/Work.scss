@@ -78,7 +78,7 @@
     .app__work-item {
         width: 270px;
 
-        height: 390px;
+        min-height: 390px;
 
         flex-direction: column;
 
@@ -98,7 +98,8 @@
         @media screen and (min-width: 2000px) {
             width: 470px;
 
-            height: 650px;
+            max-height: 650px;
+
             padding: 1.25rem;
             border-radius: 0.75rem;
         }

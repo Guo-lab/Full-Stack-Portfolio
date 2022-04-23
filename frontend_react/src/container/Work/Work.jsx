@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 
+import { MotionWrap } from '../../wrapper';
 
 
 
@@ -156,4 +157,13 @@ const Work = () => {
   )
 }
 
-export default AppWrap(Work, 'work');
+
+
+
+//// export default AppWrap(Work, 'work');
+// app__works just like what it is in scss file
+export default AppWrap(
+  MotionWrap(Work, 'app__works'),
+  'work',
+  "app__primarybg"
+);

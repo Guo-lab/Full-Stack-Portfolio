@@ -1,5 +1,6 @@
 import React from 'react';
 
+// eslint-disable-next-line
 import { About, Footer, Header, Skills, Testimonial, Work } from './container';
 import { Navbar } from './components';
 
@@ -16,7 +17,7 @@ const App = () => {
       <Work />
       
       <Skills />
-      <Testimonial />
+      {/*<Testimonial /> */}
       <Footer />
     </div>
   );
