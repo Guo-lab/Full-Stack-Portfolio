@@ -6,3 +6,5 @@
 ### Sanity:
 https://www.sanity.io/javascriptmastery2022
 
+# Demo
+[Portfolio](https://gsqportfolio.netlify.app/)
